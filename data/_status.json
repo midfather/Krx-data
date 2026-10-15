@@ -1,149 +1,453 @@
 {
- "run_kst": "2026-10-15 15:19",
+ "run_kst": "2026-10-15 16:40",
  "results": [
   {
    "date": "20261015",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261015",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261015",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261014",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1176,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261014",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 941,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "MKT_NM",
+    "SECT_TP_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "LIST_SHRS"
+   ],
+   "kept": 2
   },
   {
    "date": "20261014",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 54,
+   "fields": [
+    "BAS_DD",
+    "IDX_CLSS",
+    "IDX_NM",
+    "CLSPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT",
+    "OPNPRC_IDX",
+    "HGPRC_IDX",
+    "LWPRC_IDX",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP"
+   ],
+   "kept": 2
   },
   {
    "date": "20261013",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1176,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261013",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 941,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "MKT_NM",
+    "SECT_TP_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "LIST_SHRS"
+   ],
+   "kept": 2
   },
   {
    "date": "20261013",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 54,
+   "fields": [
+    "BAS_DD",
+    "IDX_CLSS",
+    "IDX_NM",
+    "CLSPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT",
+    "OPNPRC_IDX",
+    "HGPRC_IDX",
+    "LWPRC_IDX",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP"
+   ],
+   "kept": 2
   },
   {
    "date": "20261012",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1172,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261012",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 941,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "MKT_NM",
+    "SECT_TP_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "LIST_SHRS"
+   ],
+   "kept": 2
   },
   {
    "date": "20261012",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 54,
+   "fields": [
+    "BAS_DD",
+    "IDX_CLSS",
+    "IDX_NM",
+    "CLSPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT",
+    "OPNPRC_IDX",
+    "HGPRC_IDX",
+    "LWPRC_IDX",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP"
+   ],
+   "kept": 2
   },
   {
    "date": "20261011",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1172,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261011",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261011",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261010",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1172,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261010",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261010",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261009",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1172,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261009",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261009",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
   },
   {
    "date": "20261008",
    "ep": "etf",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 1172,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "NAV",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "INVSTASST_NETASST_TOTAMT",
+    "LIST_SHRS",
+    "IDX_IND_NM",
+    "OBJ_STKPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT_IDX"
+   ],
+   "kept": 4
   },
   {
    "date": "20261008",
    "ep": "kospi_stock",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 942,
+   "fields": [
+    "BAS_DD",
+    "ISU_CD",
+    "ISU_NM",
+    "MKT_NM",
+    "SECT_TP_NM",
+    "TDD_CLSPRC",
+    "CMPPREVDD_PRC",
+    "FLUC_RT",
+    "TDD_OPNPRC",
+    "TDD_HGPRC",
+    "TDD_LWPRC",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP",
+    "LIST_SHRS"
+   ],
+   "kept": 2
   },
   {
    "date": "20261008",
    "ep": "kospi_index",
-   "http": 401,
-   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+   "http": 200,
+   "total_rows": 54,
+   "fields": [
+    "BAS_DD",
+    "IDX_CLSS",
+    "IDX_NM",
+    "CLSPRC_IDX",
+    "CMPPREVDD_IDX",
+    "FLUC_RT",
+    "OPNPRC_IDX",
+    "HGPRC_IDX",
+    "LWPRC_IDX",
+    "ACC_TRDVOL",
+    "ACC_TRDVAL",
+    "MKTCAP"
+   ],
+   "kept": 2
   }
  ]
 }
