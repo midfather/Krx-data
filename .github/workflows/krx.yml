@@ -18,46 +18,66 @@ jobs:
           import os, json, csv, datetime, urllib.request, urllib.error
           KEY = os.environ["KRX_API_KEY"].strip()
           BASE = "https://data-dbg.krx.co.kr/svc/apis/"
-          EP = {"etf": "etp/etf_bydd_trd", "kospi_stock": "sto/stk_bydd_trd", "kospi_index": "idx/kospi_dd_trd"}
-          WATCH = ["147970", "0183J0", "0195S0", "102110", "000660", "005930"]
+          EP = {
+              "etf_hold": ["etp/etf_bydd_trd"],
+              "kospi_stock": ["sto/stk_bydd_trd"],
+              "kospi_index": ["idx/kospi_dd_trd"],
+              "gold": ["gen/gold_bydd_trd"],
+              "bond_kts": ["bon/kts_bydd_trd"],
+              "bond_index": ["idx/bon_dd_trd"],
+          }
+          ETF_NAMES = ["TIGER 모멘텀", "TIGER 미국우주테크", "TIGER SK하이닉스", "TIGER KRX금현물",
+                       "TIGER 미국나스닥100", "TIGER 미국S&P500", "KODEX 미국나스닥100",
+                       "KODEX 미국성장커버드콜", "TIGER 코리아밸류업", "KIWOOM 미국S&P500모멘텀",
+                       "TIGER 미국배당다우존스"]
+          ETF_EXACT = {"TIGER 200"}
+          STOCKS = ["000660", "005930"]
           IDX = {"코스피", "코스피 200"}
+          def keep_rows(name, rows):
+              if name == "etf_hold":
+                  return [x for x in rows if x.get("ISU_NM") in ETF_EXACT or any(n in x.get("ISU_NM", "") for n in ETF_NAMES)]
+              if name == "kospi_stock":
+                  return [x for x in rows if any(c in (str(x.get("ISU_CD", "")) + str(x.get("ISU_SRT_CD", ""))) for c in STOCKS)]
+              if name == "kospi_index":
+                  return [x for x in rows if x.get("IDX_NM") in IDX]
+              return rows
           kst = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
           status = {"run_kst": kst.strftime("%Y-%m-%d %H:%M"), "results": []}
           for back in range(0, 8):
               d = (kst - datetime.timedelta(days=back)).strftime("%Y%m%d")
-              for name, path in EP.items():
+              for name, paths in EP.items():
                   out = f"data/{name}/{d}.csv"
                   if os.path.exists(out):
                       continue
-                  r = {"date": d, "ep": name}
-                  try:
-                      req = urllib.request.Request(BASE + path + "?basDd=" + d, headers={"AUTH_KEY": KEY})
-                      with urllib.request.urlopen(req, timeout=30) as f:
-                          r["http"] = f.status
-                          js = json.loads(f.read().decode("utf-8"))
-                      rows = js.get("OutBlock_1", []) if isinstance(js, dict) else []
-                      if isinstance(js, dict) and not rows:
-                          r["msg"] = {k: v for k, v in js.items() if k != "OutBlock_1"}
-                      r["total_rows"] = len(rows)
-                      if rows:
-                          r["fields"] = list(rows[0].keys())
-                      if name == "kospi_index":
-                          keep = [x for x in rows if x.get("IDX_NM") in IDX]
-                      else:
-                          keep = [x for x in rows if any(c in (str(x.get("ISU_CD", "")) + str(x.get("ISU_SRT_CD", ""))) for c in WATCH)]
-                      r["kept"] = len(keep)
-                      if keep:
-                          os.makedirs(os.path.dirname(out), exist_ok=True)
-                          with open(out, "w", newline="", encoding="utf-8") as fo:
-                              w = csv.DictWriter(fo, fieldnames=list(keep[0].keys()))
-                              w.writeheader()
-                              w.writerows(keep)
-                  except urllib.error.HTTPError as e:
-                      r["http"] = e.code
-                      r["error"] = e.read().decode("utf-8", "ignore")[:200]
-                  except Exception as e:
-                      r["error"] = str(e)[:200]
-                  status["results"].append(r)
+                  for path in paths:
+                      r = {"date": d, "ep": name, "path": path}
+                      try:
+                          req = urllib.request.Request(BASE + path + "?basDd=" + d, headers={"AUTH_KEY": KEY})
+                          with urllib.request.urlopen(req, timeout=30) as f:
+                              r["http"] = f.status
+                              js = json.loads(f.read().decode("utf-8"))
+                          rows = js.get("OutBlock_1", []) if isinstance(js, dict) else []
+                          if isinstance(js, dict) and not rows:
+                              r["msg"] = {k: v for k, v in js.items() if k != "OutBlock_1"}
+                          r["total_rows"] = len(rows)
+                          if rows:
+                              r["fields"] = list(rows[0].keys())
+                          keep = keep_rows(name, rows)
+                          r["kept"] = len(keep)
+                          if keep:
+                              os.makedirs(os.path.dirname(out), exist_ok=True)
+                              with open(out, "w", newline="", encoding="utf-8") as fo:
+                                  w = csv.DictWriter(fo, fieldnames=list(keep[0].keys()))
+                                  w.writeheader()
+                                  w.writerows(keep)
+                      except urllib.error.HTTPError as e:
+                          r["http"] = e.code
+                          r["error"] = e.read().decode("utf-8", "ignore")[:200]
+                      except Exception as e:
+                          r["error"] = str(e)[:200]
+                      status["results"].append(r)
+                      if r.get("http") == 200:
+                          break
           os.makedirs("data", exist_ok=True)
           with open("data/_status.json", "w", encoding="utf-8") as fo:
               json.dump(status, fo, ensure_ascii=False, indent=1)
