@@ -1,0 +1,149 @@
+{
+ "run_kst": "2026-10-15 15:19",
+ "results": [
+  {
+   "date": "20261015",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261015",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261015",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261014",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261014",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261014",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261013",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261013",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261013",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261012",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261012",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261012",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261011",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261011",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261011",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261010",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261010",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261010",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261009",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261009",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261009",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261008",
+   "ep": "etf",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261008",
+   "ep": "kospi_stock",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  },
+  {
+   "date": "20261008",
+   "ep": "kospi_index",
+   "http": 401,
+   "error": "{\"respMsg\":\"Unauthorized API Call\",\"respCode\":\"401\"}"
+  }
+ ]
+}
