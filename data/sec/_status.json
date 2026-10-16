@@ -1,0 +1,6 @@
+{
+ "run_utc": "2026-10-16T21:01:37.257534",
+ "ok": 0,
+ "fail": [],
+ "fatal": "company_tickers: HTTPError HTTP Error 403: Forbidden"
+}
