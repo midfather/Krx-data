@@ -1,5 +1,5 @@
 {
- "run_kst": "2026-10-17 05:47",
+ "run_kst": "2026-10-17 05:49",
  "calls": [
   {
    "path": "/oauth2/tokenP",
@@ -238,8 +238,610 @@
    "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-search",
+   "tr": "HHDFS76410000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
   }
  ],
- "ok": 34,
+ "ok": 120,
  "fail": 0
 }
