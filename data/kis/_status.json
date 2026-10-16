@@ -1,0 +1,217 @@
+{
+ "run_kst": "2026-10-16 15:37",
+ "calls": [
+  {
+   "path": "/oauth2/tokenP",
+   "tr": null,
+   "code": null,
+   "ok": true,
+   "msg": null
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-index-price",
+   "tr": "FHPUP02100000",
+   "code": "0001",
+   "ok": false,
+   "msg": "{\"rt_cd\":\"1\",\"msg1\":\"초당 거래건수를 초과하였습니다.\",\"msg_cd\":\"EGW00201\",\"message\":\"EGW00201\"}"
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-index-price",
+   "tr": "FHPUP02100000",
+   "code": "2001",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  }
+ ],
+ "ok": 29,
+ "fail": 1
+}
