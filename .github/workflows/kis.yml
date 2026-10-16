@@ -1,0 +1,30 @@
+name: kis-intraday
+on:
+  schedule:
+    - cron: "5,35 0-6 * * 1-5"   # 한국시간 평일 09:05~15:35, 30분마다 (GitHub 일정은 몇 분~수십 분 늦을 수 있음)
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/triggers/kis.txt"   # Claude가 이 파일을 고쳐 올리면 바로 한 번 실행(장중 즉시 조회용)
+permissions:
+  contents: write
+concurrency:
+  group: kis
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fetch
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+        run: python3 kis/fetch.py
+      - name: save
+        run: |
+          git config user.name "kis-bot"
+          git config user.email "kis-bot@users.noreply.github.com"
+          git add data/kis
+          git commit -m "KIS $(TZ=Asia/Seoul date +%F_%H%M)" || echo "no change"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done
