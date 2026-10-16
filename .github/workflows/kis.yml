@@ -21,6 +21,7 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
         run: python3 kis/fetch.py
+        continue-on-error: true
       - name: save
         run: |
           git config user.name "kis-bot"

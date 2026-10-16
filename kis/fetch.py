@@ -158,25 +158,32 @@ if tok and "screen:" in MODE:
     json.dump(meta, open("data/kis/us/universe_meta_large.json" if LARGE else "data/kis/us/universe_meta.json", "w"), indent=0)
 
 # 대량 일봉 모드: kis.txt에 'bulk:'가 있으면 data/kis/us/bulk_list.txt(한 줄에 EXCD:SYMB)의 종목별 일봉 300거래일을 data/kis/us/bulk/SYMB.csv로
+def _bulk_one(ex, s, fn):
+    rows = {}; bymd = ""
+    for _ in range(3):
+        d = req("GET", "/uapi/overseas-price/v1/quotations/dailyprice", "HHDFS76240000", {"AUTH": "", "EXCD": ex, "SYMB": s, "GUBN": "0", "BYMD": bymd, "MODP": "1"}, tok=tok)
+        out = [b for b in ((d or {}).get("output2") or []) if b.get("xymd")]
+        if not out: break
+        for b in out: rows[b["xymd"]] = (b["xymd"], b.get("open"), b.get("high"), b.get("low"), b.get("clos"), b.get("tvol"), b.get("tamt"))
+        bymd = (datetime.datetime.strptime(min(b["xymd"] for b in out), "%Y%m%d") - datetime.timedelta(days=1)).strftime("%Y%m%d")
+    if rows:
+        with open(fn, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f); w.writerow(["date", "open", "high", "low", "close", "vol", "amt"])
+            for k in sorted(rows): w.writerow(rows[k])
+bulk_err = []
 if tok and "bulk:" in MODE and os.path.exists("data/kis/us/bulk_list.txt"):
     os.makedirs("data/kis/us/bulk", exist_ok=True)
     for line in open("data/kis/us/bulk_list.txt", encoding="utf-8"):
         line = line.strip()
         if ":" not in line: continue
-        ex, s = line.split(":", 1); fn = f"data/kis/us/bulk/{s}.csv"
+        ex, s = line.split(":", 1); fn = f"data/kis/us/bulk/{s.replace('/', '_')}.csv"
         if os.path.exists(fn): continue
-        rows = {}; bymd = ""
-        for _ in range(3):
-            d = req("GET", "/uapi/overseas-price/v1/quotations/dailyprice", "HHDFS76240000", {"AUTH": "", "EXCD": ex, "SYMB": s, "GUBN": "0", "BYMD": bymd, "MODP": "1"}, tok=tok)
-            out = [b for b in ((d or {}).get("output2") or []) if b.get("xymd")]
-            if not out: break
-            for b in out: rows[b["xymd"]] = (b["xymd"], b.get("open"), b.get("high"), b.get("low"), b.get("clos"), b.get("tvol"), b.get("tamt"))
-            bymd = (datetime.datetime.strptime(min(b["xymd"] for b in out), "%Y%m%d") - datetime.timedelta(days=1)).strftime("%Y%m%d")
-        if rows:
-            with open(fn, "w", newline="", encoding="utf-8") as f:
-                w = csv.writer(f); w.writerow(["date", "open", "high", "low", "close", "vol", "amt"])
-                for k in sorted(rows): w.writerow(rows[k])
-    log["calls"] = [c for c in log["calls"] if not c["ok"]] + [{"path": "bulk", "ok": True, "msg": f"{len(os.listdir('data/kis/us/bulk'))} files"}]
+        try:
+            _bulk_one(ex, s, fn)
+        except Exception as e:
+            bulk_err.append(f"{s}: {type(e).__name__} {str(e)[:80]}")
+    log["bulk_err"] = bulk_err[:50]
+    log["calls"] = [c for c in log["calls"] if not c["ok"]][:200] + [{"path": "bulk", "ok": True, "msg": f"{len(os.listdir('data/kis/us/bulk'))} files"}]
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
