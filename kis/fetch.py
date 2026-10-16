@@ -128,6 +128,20 @@ if tok and ("us:" in MODE or "uslong:" in MODE):
     old = json.load(open("data/kis/us/_detail.json", encoding="utf-8")) if os.path.exists("data/kis/us/_detail.json") else {}
     old.update(detail); detail = old
     json.dump(detail, open("data/kis/us/_detail.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+# 조건검색 모드: kis.txt에 'screen:'이 있으면 해외주식 조건검색(HHDFS76410000)을 거래소별로 돌려 원자료를 data/kis/us/screen_*.json으로 저장
+if tok and "screen:" in MODE:
+    os.makedirs("data/kis/us", exist_ok=True); res = {}
+    for ex in ("NAS", "NYS"):
+        for unit, lo, hi in (("k", "1000000", "15000000"), ("m", "1000", "15000")):
+            prm = {"AUTH": "", "EXCD": ex, "CO_YN_PRICECUR": "1", "CO_ST_PRICECUR": "5", "CO_EN_PRICECUR": "100000",
+                   "CO_YN_RATE": "", "CO_ST_RATE": "", "CO_EN_RATE": "", "CO_YN_VALX": "1", "CO_ST_VALX": lo, "CO_EN_VALX": hi,
+                   "CO_YN_SHAR": "", "CO_ST_SHAR": "", "CO_EN_SHAR": "", "CO_YN_VOLUME": "", "CO_ST_VOLUME": "", "CO_EN_VOLUME": "",
+                   "CO_YN_AMT": "", "CO_ST_AMT": "", "CO_EN_AMT": "", "CO_YN_EPS": "", "CO_ST_EPS": "", "CO_EN_EPS": "",
+                   "CO_YN_PER": "", "CO_ST_PER": "", "CO_EN_PER": "", "KEYB": ""}
+            d = req("GET", "/uapi/overseas-price/v1/quotations/inquire-search", "HHDFS76410000", prm, tok=tok)
+            res[f"{ex}_{unit}"] = {"output1": (d or {}).get("output1"), "n": len((d or {}).get("output2") or []), "output2": (d or {}).get("output2"), "raw_keys": list((d or {}).keys())}
+    json.dump(res, open("data/kis/us/screen_raw.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
