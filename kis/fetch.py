@@ -99,13 +99,14 @@ if tok and "daily" in MODE:
 
 # 미국 일봉 모드: kis.txt에 'us:AAA,BBB,...'가 있으면 종목별 일봉 약 300거래일 + 상세(시총·PER·상장주수)를 data/kis/us/에 저장
 if tok and "us:" in MODE:
+    PAGES = 16 if "uslong:" in MODE else 3
     syms = [s.strip().upper() for s in MODE.split("us:", 1)[1].split()[0].split(",") if s.strip()]
     os.makedirs("data/kis/us", exist_ok=True); detail = {}
     for s in syms:
         got = False
         for ex in ("NAS", "NYS", "AMS", "BAY", "BAQ", "BAA"):
             rows = {}; bymd = ""
-            for _ in range(3):
+            for _ in range(PAGES):
                 d = req("GET", "/uapi/overseas-price/v1/quotations/dailyprice", "HHDFS76240000",
                         {"AUTH": "", "EXCD": ex, "SYMB": s, "GUBN": "0", "BYMD": bymd, "MODP": "1"}, tok=tok)
                 out = [b for b in ((d or {}).get("output2") or []) if b.get("xymd")]
@@ -123,6 +124,8 @@ if tok and "us:" in MODE:
                 detail[s] = {"excd": ex, "n": len(rows), "last": max(rows), "mcap": o.get("tomv"), "shares": o.get("shar"), "per": o.get("perx"), "pbr": o.get("pbrx"), "eps": o.get("epsx"), "h52": o.get("h52p"), "l52": o.get("l52p"), "cur": o.get("last")}
                 got = True; break
         if not got: detail[s] = {"error": "no data on NAS/NYS/AMS/BAY/BAQ/BAA"}
+    old = json.load(open("data/kis/us/_detail.json", encoding="utf-8")) if os.path.exists("data/kis/us/_detail.json") else {}
+    old.update(detail); detail = old
     json.dump(detail, open("data/kis/us/_detail.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
