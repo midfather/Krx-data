@@ -43,7 +43,7 @@ if tok:
             o = p["output"]
             snap.append({"time": T, "code": c, "name": n, "price": o.get("stck_prpr"), "chg": o.get("prdy_vrss"), "chg_pct": o.get("prdy_ctrt"),
                          "open": o.get("stck_oprc"), "high": o.get("stck_hgpr"), "low": o.get("stck_lwpr"), "vol": o.get("acml_vol"),
-                         "amt": o.get("acml_tr_pbmn"), "frgn_net": o.get("frgn_ntby_qty"), "pgm_net": o.get("pgtr_ntby_qty")})
+                         "amt": o.get("acml_tr_pbmn"), "frgn_net": o.get("frgn_ntby_qty"), "pgm_net": o.get("pgtr_ntby_qty"), "per": o.get("per"), "pbr": o.get("pbr"), "eps": o.get("eps"), "w52_hi": o.get("w52_hgpr"), "w52_lo": o.get("w52_lwpr")})
         m = req("GET", "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice", "FHKST03010200",
                 {"FID_ETC_CLS_CODE": "", "FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": c, "FID_INPUT_HOUR_1": kst.strftime("%H%M%S"), "FID_PW_DATA_INCU_YN": "Y"}, tok=tok)
         if m and m.get("output2"):
@@ -71,12 +71,31 @@ if tok:
                          "open": o.get("bstp_nmix_oprc"), "high": o.get("bstp_nmix_hgpr"), "low": o.get("bstp_nmix_lwpr"), "vol": o.get("acml_vol"), "amt": o.get("acml_tr_pbmn")})
     if snap:
         fn = f"{OUT}/snapshot.csv"; new = not os.path.exists(fn)
-        ks = ["time", "code", "name", "price", "chg", "chg_pct", "open", "high", "low", "vol", "amt", "frgn_net", "pgm_net"]
+        ks = ["time", "code", "name", "price", "chg", "chg_pct", "open", "high", "low", "vol", "amt", "frgn_net", "pgm_net", "per", "pbr", "eps", "w52_hi", "w52_lo"]
         with open(fn, "a", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=ks, extrasaction="ignore")
             if new: w.writeheader()
             w.writerows(snap)
         json.dump(snap, open("data/kis/latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+# 일봉 채우기 모드: .github/triggers/kis.txt 내용에 'daily'가 있으면 종목별 일봉 약 400일을 data/kis/daily/코드.csv로 저장(덮어씀)
+MODE = open(".github/triggers/kis.txt", encoding="utf-8").read() if os.path.exists(".github/triggers/kis.txt") else ""
+if tok and "daily" in MODE:
+    os.makedirs("data/kis/daily", exist_ok=True)
+    for c in CODES:
+        rows = {}; end = kst
+        for _ in range(5):
+            st = end - datetime.timedelta(days=140)
+            d = req("GET", "/uapi/domestic-stock/v1/quotations/inquire-daily-itemchartprice", "FHKST03010100",
+                    {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": c, "FID_INPUT_DATE_1": st.strftime("%Y%m%d"), "FID_INPUT_DATE_2": end.strftime("%Y%m%d"), "FID_PERIOD_DIV_CODE": "D", "FID_ORG_ADJ_PRC": "0"}, tok=tok)
+            for b in (d or {}).get("output2", []) or []:
+                if b.get("stck_bsop_date"):
+                    rows[b["stck_bsop_date"]] = {"date": b["stck_bsop_date"], "open": b["stck_oprc"], "high": b["stck_hgpr"], "low": b["stck_lwpr"], "close": b["stck_clpr"], "vol": b["acml_vol"], "amt": b["acml_tr_pbmn"]}
+            end = st - datetime.timedelta(days=1)
+        if rows:
+            with open(f"data/kis/daily/{c}.csv", "w", newline="", encoding="utf-8") as f:
+                w = csv.DictWriter(f, fieldnames=["date", "open", "high", "low", "close", "vol", "amt"]); w.writeheader()
+                for k in sorted(rows): w.writerow(rows[k])
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
