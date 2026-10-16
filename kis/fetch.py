@@ -132,10 +132,12 @@ if tok and ("us:" in MODE or "uslong:" in MODE):
 # 조건검색 모드: kis.txt에 'screen:'이 있으면 해외주식 조건검색(HHDFS76410000, 한 번에 최대 100행·가격 내림차순)을
 # 가격 구간을 나눠 가며 전부 받아 data/kis/us/universe.csv로 저장(시가총액 10억~150억 달러, 주가 ≥ 5달러, 나스닥·뉴욕)
 if tok and "screen:" in MODE:
+    LARGE = "screen:large" in MODE
+    VLO, VHI = ("15000000", "9000000000") if LARGE else ("1000000", "15000000")
     os.makedirs("data/kis/us", exist_ok=True); rows = {}; meta = []
     def search(ex, lo, hi):
         prm = {"AUTH": "", "EXCD": ex, "CO_YN_PRICECUR": "1", "CO_ST_PRICECUR": f"{lo:.2f}", "CO_EN_PRICECUR": f"{hi:.2f}",
-               "CO_YN_RATE": "", "CO_ST_RATE": "", "CO_EN_RATE": "", "CO_YN_VALX": "1", "CO_ST_VALX": "1000000", "CO_EN_VALX": "15000000",
+               "CO_YN_RATE": "", "CO_ST_RATE": "", "CO_EN_RATE": "", "CO_YN_VALX": "1", "CO_ST_VALX": VLO, "CO_EN_VALX": VHI,
                "CO_YN_SHAR": "", "CO_ST_SHAR": "", "CO_EN_SHAR": "", "CO_YN_VOLUME": "", "CO_ST_VOLUME": "", "CO_EN_VOLUME": "",
                "CO_YN_AMT": "", "CO_ST_AMT": "", "CO_EN_AMT": "", "CO_YN_EPS": "", "CO_ST_EPS": "", "CO_EN_EPS": "",
                "CO_YN_PER": "", "CO_ST_PER": "", "CO_EN_PER": "", "KEYB": ""}
@@ -151,9 +153,30 @@ if tok and "screen:" in MODE:
         for lo, hi in ((5, 20), (20.01, 50), (50.01, 120), (120.01, 100000)):
             search(ex, lo, hi)
     keys = ["excd", "symb", "name", "ename", "last", "rate", "tvol", "avol", "valx", "shar", "eps", "per"]
-    with open("data/kis/us/universe.csv", "w", newline="", encoding="utf-8") as f:
+    with open("data/kis/us/universe_large.csv" if LARGE else "data/kis/us/universe.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=keys, extrasaction="ignore"); w.writeheader(); w.writerows(rows.values())
-    json.dump(meta, open("data/kis/us/universe_meta.json", "w"), indent=0)
+    json.dump(meta, open("data/kis/us/universe_meta_large.json" if LARGE else "data/kis/us/universe_meta.json", "w"), indent=0)
+
+# 대량 일봉 모드: kis.txt에 'bulk:'가 있으면 data/kis/us/bulk_list.txt(한 줄에 EXCD:SYMB)의 종목별 일봉 300거래일을 data/kis/us/bulk/SYMB.csv로
+if tok and "bulk:" in MODE and os.path.exists("data/kis/us/bulk_list.txt"):
+    os.makedirs("data/kis/us/bulk", exist_ok=True)
+    for line in open("data/kis/us/bulk_list.txt", encoding="utf-8"):
+        line = line.strip()
+        if ":" not in line: continue
+        ex, s = line.split(":", 1); fn = f"data/kis/us/bulk/{s}.csv"
+        if os.path.exists(fn): continue
+        rows = {}; bymd = ""
+        for _ in range(3):
+            d = req("GET", "/uapi/overseas-price/v1/quotations/dailyprice", "HHDFS76240000", {"AUTH": "", "EXCD": ex, "SYMB": s, "GUBN": "0", "BYMD": bymd, "MODP": "1"}, tok=tok)
+            out = [b for b in ((d or {}).get("output2") or []) if b.get("xymd")]
+            if not out: break
+            for b in out: rows[b["xymd"]] = (b["xymd"], b.get("open"), b.get("high"), b.get("low"), b.get("clos"), b.get("tvol"), b.get("tamt"))
+            bymd = (datetime.datetime.strptime(min(b["xymd"] for b in out), "%Y%m%d") - datetime.timedelta(days=1)).strftime("%Y%m%d")
+        if rows:
+            with open(fn, "w", newline="", encoding="utf-8") as f:
+                w = csv.writer(f); w.writerow(["date", "open", "high", "low", "close", "vol", "amt"])
+                for k in sorted(rows): w.writerow(rows[k])
+    log["calls"] = [c for c in log["calls"] if not c["ok"]] + [{"path": "bulk", "ok": True, "msg": f"{len(os.listdir('data/kis/us/bulk'))} files"}]
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
