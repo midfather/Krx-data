@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "40 23 * * *"
   workflow_dispatch:
+    inputs:
+      days:
+        description: "며칠 전까지 채울지(평소 8, 과거 차트용 처음 한 번만 400)"
+        required: false
+        default: "8"
 permissions:
   contents: write
 jobs:
@@ -13,6 +18,7 @@ jobs:
       - name: fetch
         env:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
+          DAYS: ${{ github.event.inputs.days || '8' }}
         run: |
           python3 - <<'PY'
           import os, json, csv, datetime, urllib.request, urllib.error
@@ -29,7 +35,7 @@ jobs:
           ETF_NAMES = ["TIGER 모멘텀", "TIGER 미국우주테크", "TIGER SK하이닉스", "TIGER KRX금현물",
                        "TIGER 미국나스닥100", "TIGER 미국S&P500", "KODEX 미국나스닥100",
                        "KODEX 미국성장커버드콜", "TIGER 코리아밸류업", "KIWOOM 미국S&P500모멘텀",
-                       "TIGER 미국배당다우존스"]
+                       "TIGER 미국배당다우존스", "글로벌HBM반도체", "AI전력핵심설비"]
           ETF_EXACT = {"TIGER 200"}
           STOCKS = ["000660", "005930"]
           IDX = {"코스피", "코스피 200"}
@@ -43,7 +49,7 @@ jobs:
               return rows
           kst = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
           status = {"run_kst": kst.strftime("%Y-%m-%d %H:%M"), "results": []}
-          for back in range(0, 8):
+          for back in range(0, int(os.environ.get('DAYS', '8') or 8)):
               d = (kst - datetime.timedelta(days=back)).strftime("%Y%m%d")
               for name, paths in EP.items():
                   out = f"data/{name}/{d}.csv"
