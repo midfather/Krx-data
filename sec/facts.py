@@ -1,7 +1,8 @@
 # SEC XBRL companyfacts로 재무 요약(TTM 매출·성장, FCF, 희석, 총이익률, 현금·부채 등) — 공개 무료 API, 키 없음
 # 입력: data/sec/list.txt(한 줄에 티커). 출력: data/sec/summary.csv, data/sec/_status.json
 import json, csv, os, time, datetime, urllib.request, gzip, io
-UA = {"User-Agent": "Krx-data personal research (github.com/midfather/Krx-data)", "Accept-Encoding": "gzip"}
+UA = {"User-Agent": "Krx-data research bot krx-bot@users.noreply.github.com", "Accept-Encoding": "gzip", "Host": None}
+UA = {k: v for k, v in UA.items() if v}
 def get(url):
     r = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(r, timeout=60) as f:
@@ -10,7 +11,11 @@ def get(url):
     time.sleep(0.15); return json.loads(b)
 os.makedirs("data/sec", exist_ok=True)
 status = {"run_utc": datetime.datetime.utcnow().isoformat(), "ok": 0, "fail": []}
-tick = {v["ticker"].upper(): str(v["cik_str"]).zfill(10) for v in get("https://www.sec.gov/files/company_tickers.json").values()}
+try:
+    tick = {v["ticker"].upper(): str(v["cik_str"]).zfill(10) for v in get("https://www.sec.gov/files/company_tickers.json").values()}
+except Exception as e:
+    status["fatal"] = f"company_tickers: {type(e).__name__} {str(e)[:200]}"
+    json.dump(status, open("data/sec/_status.json", "w"), indent=1); raise SystemExit(0)
 D = lambda s: datetime.date.fromisoformat(s)
 def facts(f, tags, unit="USD"):
     for tg in tags:
