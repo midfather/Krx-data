@@ -1,13 +1,2723 @@
 {
- "run_kst": "2026-10-17 06:15",
+ "run_kst": "2026-10-17 08:20",
  "calls": [
   {
-   "path": "bulk",
+   "path": "/oauth2/tokenP",
+   "tr": null,
+   "code": null,
    "ok": true,
-   "msg": "2150 files"
+   "msg": null
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "102110",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "0183J0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "0195S0",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "442580",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "487240",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "147970",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "496080",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "005930",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-price",
+   "tr": "FHKST01010100",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+   "tr": "FHKST03010200",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-investor",
+   "tr": "FHKST01010900",
+   "code": "000660",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-index-price",
+   "tr": "FHPUP02100000",
+   "code": "0001",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/domestic-stock/v1/quotations/inquire-index-price",
+   "tr": "FHPUP02100000",
+   "code": "2001",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
   }
  ],
- "bulk_err": [],
- "ok": 1,
+ "ok": 388,
  "fail": 0
 }
