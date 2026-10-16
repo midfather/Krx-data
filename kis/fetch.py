@@ -12,6 +12,7 @@ D, T = kst.strftime("%Y%m%d"), kst.strftime("%H%M")
 OUT = f"data/kis/{D}"; os.makedirs(OUT, exist_ok=True)
 log = {"run_kst": kst.strftime("%Y-%m-%d %H:%M"), "calls": []}
 
+params_retry = {}
 def req(method, path, tr=None, params=None, body=None, tok=None):
     url = BASE + path + ("?" + "&".join(f"{k}={v}" for k, v in params.items()) if params else "")
     h = {"content-type": "application/json; charset=utf-8", "appkey": KEY, "appsecret": SEC, "custtype": "P"}
@@ -25,9 +26,11 @@ def req(method, path, tr=None, params=None, body=None, tok=None):
         js = {"http": e.code, "err": e.read().decode("utf-8", "ignore")[:200]}; ok = False
     except Exception as e:
         js = {"err": str(e)[:200]}; ok = False
+    if not ok and "EGW00201" in json.dumps(js, ensure_ascii=False) and not params_retry.get(path + str(params)):
+        params_retry[path + str(params)] = 1; time.sleep(1.1); return req(method, path, tr, params, body, tok)
     log["calls"].append({"path": path, "tr": tr, "code": (params or {}).get("FID_INPUT_ISCD"), "ok": ok,
                          "msg": js.get("msg1") or js.get("err") or js.get("error_description")})
-    time.sleep(0.12)  # 초당 호출 제한(실전 20건/초) 여유
+    time.sleep(0.35)  # 초당 호출 제한 여유(신규 계좌는 제한이 낮음) — 초과(EGW00201) 시 1초 뒤 1회 재시도
     return js if ok else None
 
 t = req("POST", "/oauth2/tokenP", body={"grant_type": "client_credentials", "appkey": KEY, "appsecret": SEC})
