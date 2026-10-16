@@ -129,19 +129,31 @@ if tok and ("us:" in MODE or "uslong:" in MODE):
     old.update(detail); detail = old
     json.dump(detail, open("data/kis/us/_detail.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-# 조건검색 모드: kis.txt에 'screen:'이 있으면 해외주식 조건검색(HHDFS76410000)을 거래소별로 돌려 원자료를 data/kis/us/screen_*.json으로 저장
+# 조건검색 모드: kis.txt에 'screen:'이 있으면 해외주식 조건검색(HHDFS76410000, 한 번에 최대 100행·가격 내림차순)을
+# 가격 구간을 나눠 가며 전부 받아 data/kis/us/universe.csv로 저장(시가총액 10억~150억 달러, 주가 ≥ 5달러, 나스닥·뉴욕)
 if tok and "screen:" in MODE:
-    os.makedirs("data/kis/us", exist_ok=True); res = {}
+    os.makedirs("data/kis/us", exist_ok=True); rows = {}; meta = []
+    def search(ex, lo, hi):
+        prm = {"AUTH": "", "EXCD": ex, "CO_YN_PRICECUR": "1", "CO_ST_PRICECUR": f"{lo:.2f}", "CO_EN_PRICECUR": f"{hi:.2f}",
+               "CO_YN_RATE": "", "CO_ST_RATE": "", "CO_EN_RATE": "", "CO_YN_VALX": "1", "CO_ST_VALX": "1000000", "CO_EN_VALX": "15000000",
+               "CO_YN_SHAR": "", "CO_ST_SHAR": "", "CO_EN_SHAR": "", "CO_YN_VOLUME": "", "CO_ST_VOLUME": "", "CO_EN_VOLUME": "",
+               "CO_YN_AMT": "", "CO_ST_AMT": "", "CO_EN_AMT": "", "CO_YN_EPS": "", "CO_ST_EPS": "", "CO_EN_EPS": "",
+               "CO_YN_PER": "", "CO_ST_PER": "", "CO_EN_PER": "", "KEYB": ""}
+        d = req("GET", "/uapi/overseas-price/v1/quotations/inquire-search", "HHDFS76410000", prm, tok=tok) or {}
+        o1 = d.get("output1") or {}; o2 = d.get("output2") or []
+        trec = int(o1.get("trec") or 0); crec = int(o1.get("crec") or 0)
+        meta.append({"ex": ex, "lo": lo, "hi": hi, "trec": trec, "crec": crec})
+        if trec > crec and hi - lo > 0.02:
+            mid = round((lo + hi) / 2, 2); search(ex, lo, mid); search(ex, mid + 0.01, hi)
+        else:
+            for r in o2: rows[r["excd"] + ":" + r["symb"]] = r
     for ex in ("NAS", "NYS"):
-        for unit, lo, hi in (("k", "1000000", "15000000"), ("m", "1000", "15000")):
-            prm = {"AUTH": "", "EXCD": ex, "CO_YN_PRICECUR": "1", "CO_ST_PRICECUR": "5", "CO_EN_PRICECUR": "100000",
-                   "CO_YN_RATE": "", "CO_ST_RATE": "", "CO_EN_RATE": "", "CO_YN_VALX": "1", "CO_ST_VALX": lo, "CO_EN_VALX": hi,
-                   "CO_YN_SHAR": "", "CO_ST_SHAR": "", "CO_EN_SHAR": "", "CO_YN_VOLUME": "", "CO_ST_VOLUME": "", "CO_EN_VOLUME": "",
-                   "CO_YN_AMT": "", "CO_ST_AMT": "", "CO_EN_AMT": "", "CO_YN_EPS": "", "CO_ST_EPS": "", "CO_EN_EPS": "",
-                   "CO_YN_PER": "", "CO_ST_PER": "", "CO_EN_PER": "", "KEYB": ""}
-            d = req("GET", "/uapi/overseas-price/v1/quotations/inquire-search", "HHDFS76410000", prm, tok=tok)
-            res[f"{ex}_{unit}"] = {"output1": (d or {}).get("output1"), "n": len((d or {}).get("output2") or []), "output2": (d or {}).get("output2"), "raw_keys": list((d or {}).keys())}
-    json.dump(res, open("data/kis/us/screen_raw.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        for lo, hi in ((5, 20), (20.01, 50), (50.01, 120), (120.01, 100000)):
+            search(ex, lo, hi)
+    keys = ["excd", "symb", "name", "ename", "last", "rate", "tvol", "avol", "valx", "shar", "eps", "per"]
+    with open("data/kis/us/universe.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=keys, extrasaction="ignore"); w.writeheader(); w.writerows(rows.values())
+    json.dump(meta, open("data/kis/us/universe_meta.json", "w"), indent=0)
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
