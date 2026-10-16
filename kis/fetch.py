@@ -98,9 +98,10 @@ if tok and "daily" in MODE:
                 for k in sorted(rows): w.writerow(rows[k])
 
 # 미국 일봉 모드: kis.txt에 'us:AAA,BBB,...'가 있으면 종목별 일봉 약 300거래일 + 상세(시총·PER·상장주수)를 data/kis/us/에 저장
-if tok and "us:" in MODE:
+if tok and ("us:" in MODE or "uslong:" in MODE):
     PAGES = 16 if "uslong:" in MODE else 3
-    syms = [s.strip().upper() for s in MODE.split("us:", 1)[1].split()[0].split(",") if s.strip()]
+    key = "uslong:" if "uslong:" in MODE else "us:"
+    syms = [s.strip().upper() for s in MODE.split(key, 1)[1].split()[0].split(",") if s.strip()]
     os.makedirs("data/kis/us", exist_ok=True); detail = {}
     for s in syms:
         got = False
