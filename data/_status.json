@@ -1,7 +1,61 @@
 {
- "run_kst": "2026-10-18 08:54",
+ "run_kst": "2026-10-19 08:55",
  "results": [
   {
+   "date": "20261019",
+   "ep": "etf_hold",
+   "path": "etp/etf_bydd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
+   "date": "20261019",
+   "ep": "kospi_stock",
+   "path": "sto/stk_bydd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
+   "date": "20261019",
+   "ep": "kospi_index",
+   "path": "idx/kospi_dd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
+   "date": "20261019",
+   "ep": "gold",
+   "path": "gen/gold_bydd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
+   "date": "20261019",
+   "ep": "bond_kts",
+   "path": "bon/kts_bydd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
+   "date": "20261019",
+   "ep": "bond_index",
+   "path": "idx/bon_dd_trd",
+   "http": 200,
+   "msg": {},
+   "total_rows": 0,
+   "kept": 0
+  },
+  {
    "date": "20261018",
    "ep": "etf_hold",
    "path": "etp/etf_bydd_trd",
@@ -104,42 +158,6 @@
    "date": "20261017",
    "ep": "bond_index",
    "path": "idx/bon_dd_trd",
-   "http": 200,
-   "msg": {},
-   "total_rows": 0,
-   "kept": 0
-  },
-  {
-   "date": "20261011",
-   "ep": "kospi_stock",
-   "path": "sto/stk_bydd_trd",
-   "http": 200,
-   "msg": {},
-   "total_rows": 0,
-   "kept": 0
-  },
-  {
-   "date": "20261011",
-   "ep": "kospi_index",
-   "path": "idx/kospi_dd_trd",
-   "http": 200,
-   "msg": {},
-   "total_rows": 0,
-   "kept": 0
-  },
-  {
-   "date": "20261011",
-   "ep": "gold",
-   "path": "gen/gold_bydd_trd",
-   "http": 200,
-   "msg": {},
-   "total_rows": 0,
-   "kept": 0
-  },
-  {
-   "date": "20261011",
-   "ep": "bond_kts",
-   "path": "bon/kts_bydd_trd",
    "http": 200,
    "msg": {},
    "total_rows": 0,
