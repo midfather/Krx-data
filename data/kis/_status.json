@@ -1,5 +1,5 @@
 {
- "run_kst": "2026-10-19 15:05",
+ "run_kst": "2026-10-19 16:25",
  "calls": [
   {
    "path": "/oauth2/tokenP",
@@ -691,180 +691,12 @@
    "path": "/uapi/overseas-price/v1/quotations/dailyprice",
    "tr": "HHDFS76240000",
    "code": null,
-   "ok": false,
-   "msg": "Remote end closed connection without response"
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/price-detail",
-   "tr": "HHDFS76200200",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
   },
   {
    "path": "/uapi/overseas-price/v1/quotations/price-detail",
    "tr": "HHDFS76200200",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/price-detail",
-   "tr": "HHDFS76200200",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
-   "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
-  },
-  {
-   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
-   "tr": "HHDFS76240000",
    "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
@@ -970,6 +802,55 @@
   {
    "path": "/uapi/overseas-price/v1/quotations/dailyprice",
    "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
    "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
@@ -1304,6 +1185,125 @@
    "msg": "정상처리 되었습니다."
   },
   {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/price-detail",
+   "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
    "path": "/uapi/overseas-price/v1/quotations/price-detail",
    "tr": "HHDFS76200200",
    "code": null,
@@ -1922,6 +1922,13 @@
   {
    "path": "/uapi/overseas-price/v1/quotations/price-detail",
    "tr": "HHDFS76200200",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
    "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
@@ -2718,6 +2725,6 @@
    "msg": "정상처리 되었습니다."
   }
  ],
- "ok": 387,
- "fail": 1
+ "ok": 389,
+ "fail": 0
 }
