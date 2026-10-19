@@ -1,5 +1,5 @@
 {
- "run_kst": "2026-10-19 14:10",
+ "run_kst": "2026-10-19 15:05",
  "calls": [
   {
    "path": "/oauth2/tokenP",
@@ -691,8 +691,8 @@
    "path": "/uapi/overseas-price/v1/quotations/dailyprice",
    "tr": "HHDFS76240000",
    "code": null,
-   "ok": true,
-   "msg": "정상처리 되었습니다."
+   "ok": false,
+   "msg": "Remote end closed connection without response"
   },
   {
    "path": "/uapi/overseas-price/v1/quotations/price-detail",
@@ -2718,6 +2718,6 @@
    "msg": "정상처리 되었습니다."
   }
  ],
- "ok": 388,
- "fail": 0
+ "ok": 387,
+ "fail": 1
 }
