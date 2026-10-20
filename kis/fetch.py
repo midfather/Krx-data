@@ -187,3 +187,10 @@ if tok and "bulk:" in MODE and os.path.exists("data/kis/us/bulk_list.txt"):
 log["ok"] = sum(c["ok"] for c in log["calls"]); log["fail"] = sum(not c["ok"] for c in log["calls"])
 json.dump(log, open("data/kis/_status.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("ok", log["ok"], "fail", log["fail"])
+
+# 일봉 증분 추가·보정(2026-10-20) — 실패해도 수집 결과에 영향 없음
+try:
+    import append_daily
+    print("append_daily", append_daily.run())
+except Exception as e:
+    print("append_daily 실패:", type(e).__name__, str(e)[:120])
