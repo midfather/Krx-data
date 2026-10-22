@@ -1,0 +1,266 @@
+{
+ "source": "meritz-open-api",
+ "us_asof_kst": "2026-10-22T05:58:05+09:00",
+ "kr_asof_kst": "2026-10-22T09:11:16+09:00",
+ "us": [
+  {
+   "symbol": "NVDA",
+   "name": "NVIDIA",
+   "price": 221.97,
+   "change": 5.5,
+   "change_pct": 2.54,
+   "prev_close": 216.47
+  },
+  {
+   "symbol": "GOOGL",
+   "name": "Alphabet",
+   "price": 334.76,
+   "change": -5.515,
+   "change_pct": -1.62,
+   "prev_close": 340.275
+  },
+  {
+   "symbol": "MSFT",
+   "name": "Microsoft",
+   "price": 532.95,
+   "change": 1.08,
+   "change_pct": 0.2,
+   "prev_close": 531.87
+  },
+  {
+   "symbol": "JNJ",
+   "name": "Johnson & Johnson",
+   "price": 257.78,
+   "change": -1.58,
+   "change_pct": -0.61,
+   "prev_close": 259.36
+  },
+  {
+   "symbol": "KO",
+   "name": "Coca-Cola",
+   "price": 92.68,
+   "change": -0.81,
+   "change_pct": -0.87,
+   "prev_close": 93.49
+  },
+  {
+   "symbol": "QQQM",
+   "name": "Invesco QQQ Mini",
+   "price": 298.64,
+   "change": 3.05,
+   "change_pct": 1.03,
+   "prev_close": 295.59
+  },
+  {
+   "symbol": "SPYM",
+   "name": "SPDR Portfolio S&P 500",
+   "price": 90.99,
+   "change": 0.46,
+   "change_pct": 0.51,
+   "prev_close": 90.53
+  },
+  {
+   "symbol": "IEF",
+   "name": "iShares 7-10Y Treasury",
+   "price": 90.23,
+   "change": -0.02,
+   "change_pct": -0.02,
+   "prev_close": 90.25
+  },
+  {
+   "symbol": "RDW",
+   "name": "Redwire",
+   "price": 8.56,
+   "change": 0.26,
+   "change_pct": 3.13,
+   "prev_close": 8.3
+  },
+  {
+   "symbol": "IREN",
+   "name": "IREN",
+   "price": 27.84,
+   "change": 1.22,
+   "change_pct": 4.58,
+   "prev_close": 26.62
+  },
+  {
+   "symbol": "ARKF",
+   "name": "ARK Fintech",
+   "price": 46.56,
+   "change": 0.56,
+   "change_pct": 1.22,
+   "prev_close": 46.0
+  },
+  {
+   "symbol": "XRPI",
+   "name": "XRP ETF",
+   "price": 7.45,
+   "change": 0.3343,
+   "change_pct": 4.7,
+   "prev_close": 7.13
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon",
+   "price": 262.37,
+   "change": -0.26,
+   "change_pct": -0.1,
+   "prev_close": 262.63
+  },
+  {
+   "symbol": "UNH",
+   "name": "UnitedHealth",
+   "price": 417.0,
+   "change": -2.26,
+   "change_pct": -0.54,
+   "prev_close": 419.26
+  },
+  {
+   "symbol": "O",
+   "name": "Realty Income",
+   "price": 55.35,
+   "change": -0.99,
+   "change_pct": -1.76,
+   "prev_close": 56.34
+  },
+  {
+   "symbol": "QLD",
+   "name": "ProShares QQQ 2X",
+   "price": 91.46,
+   "change": 1.92,
+   "change_pct": 2.14,
+   "prev_close": 89.54
+  },
+  {
+   "symbol": "QQQI",
+   "name": "NEOS Nasdaq 100 High Income",
+   "price": 54.0,
+   "change": 0.4743,
+   "change_pct": 0.89,
+   "prev_close": 54.16
+  },
+  {
+   "symbol": "SGOV",
+   "name": "iShares 0-3M Treasury",
+   "price": 100.62,
+   "change": 0.01,
+   "change_pct": 0.01,
+   "prev_close": 100.61
+  },
+  {
+   "symbol": "SPMO",
+   "name": "Invesco S&P 500 Momentum",
+   "price": 143.15,
+   "change": 1.2,
+   "change_pct": 0.85,
+   "prev_close": 141.95
+  }
+ ],
+ "kr": [
+  {
+   "code": "005930",
+   "name": "삼성전자",
+   "price": 226000,
+   "change": 2500,
+   "change_pct": 1.12
+  },
+  {
+   "code": "102110",
+   "name": "TIGER 200",
+   "price": 90295,
+   "change": 240,
+   "change_pct": 0.27
+  },
+  {
+   "code": "442580",
+   "name": "PLUS 글로벌HBM반도체",
+   "price": 84170,
+   "change": -825,
+   "change_pct": -0.97
+  },
+  {
+   "code": "487240",
+   "name": "KODEX AI전력핵심설비",
+   "price": 28100,
+   "change": 160,
+   "change_pct": 0.57
+  },
+  {
+   "code": "496080",
+   "name": "TIGER 코리아밸류업",
+   "price": 26580,
+   "change": -10,
+   "change_pct": -0.04
+  },
+  {
+   "code": "147970",
+   "name": "TIGER 모멘텀",
+   "price": 66630,
+   "change": 660,
+   "change_pct": 1.0
+  },
+  {
+   "code": "0195S0",
+   "name": "TIGER SK하이닉스단일 레버리지",
+   "price": 4635,
+   "change": 0,
+   "change_pct": 0.0
+  },
+  {
+   "code": "0183J0",
+   "name": "TIGER 미국우주테크",
+   "price": 6280,
+   "change": 0,
+   "change_pct": 0.0
+  },
+  {
+   "code": "360750",
+   "name": "TIGER 미국S&P500",
+   "price": 25485,
+   "change": 60,
+   "change_pct": 0.24
+  },
+  {
+   "code": "379810",
+   "name": "KODEX 미국나스닥100",
+   "price": 26085,
+   "change": 80,
+   "change_pct": 0.31
+  },
+  {
+   "code": "133690",
+   "name": "TIGER 미국나스닥100",
+   "price": 174380,
+   "change": 555,
+   "change_pct": 0.32
+  },
+  {
+   "code": "0144L0",
+   "name": "KODEX 미국성장커버드콜액티브",
+   "price": 9125,
+   "change": 5,
+   "change_pct": 0.05
+  },
+  {
+   "code": "0072R0",
+   "name": "TIGER KRX금현물(Yahoo: TIGER Gold Spot)",
+   "price": 11725,
+   "change": 50,
+   "change_pct": 0.43
+  },
+  {
+   "code": "0137V0",
+   "name": "KIWOOM S&P500 모멘텀",
+   "price": 10680,
+   "change": 30,
+   "change_pct": 0.28
+  },
+  {
+   "code": "442560",
+   "name": "RISE TDF2040액티브 적격",
+   "price": 15905,
+   "change": 45,
+   "change_pct": 0.28
+  }
+ ]
+}
