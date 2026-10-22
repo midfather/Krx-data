@@ -1,0 +1,161 @@
+{
+ "us": [
+  {
+   "symbol": "NVDA",
+   "exch": "OQ",
+   "name": "NVIDIA"
+  },
+  {
+   "symbol": "GOOGL",
+   "exch": "OQ",
+   "name": "Alphabet"
+  },
+  {
+   "symbol": "MSFT",
+   "exch": "OQ",
+   "name": "Microsoft"
+  },
+  {
+   "symbol": "JNJ",
+   "exch": "NY",
+   "name": "Johnson & Johnson"
+  },
+  {
+   "symbol": "KO",
+   "exch": "NY",
+   "name": "Coca-Cola"
+  },
+  {
+   "symbol": "QQQM",
+   "exch": "OQ",
+   "name": "Invesco QQQ Mini"
+  },
+  {
+   "symbol": "SPYM",
+   "exch": "AX",
+   "name": "SPDR Portfolio S&P 500"
+  },
+  {
+   "symbol": "IEF",
+   "exch": "OQ",
+   "name": "iShares 7-10Y Treasury"
+  },
+  {
+   "symbol": "RDW",
+   "exch": "NY",
+   "name": "Redwire"
+  },
+  {
+   "symbol": "IREN",
+   "exch": "OQ",
+   "name": "IREN"
+  },
+  {
+   "symbol": "ARKF",
+   "exch": "AX",
+   "name": "ARK Fintech"
+  },
+  {
+   "symbol": "XRPI",
+   "exch": "OQ",
+   "name": "XRP ETF"
+  },
+  {
+   "symbol": "AMZN",
+   "exch": "OQ",
+   "name": "Amazon"
+  },
+  {
+   "symbol": "UNH",
+   "exch": "NY",
+   "name": "UnitedHealth"
+  },
+  {
+   "symbol": "O",
+   "exch": "NY",
+   "name": "Realty Income"
+  },
+  {
+   "symbol": "QLD",
+   "exch": "AX",
+   "name": "ProShares QQQ 2X"
+  },
+  {
+   "symbol": "QQQI",
+   "exch": "OQ",
+   "name": "NEOS Nasdaq 100 High Income"
+  },
+  {
+   "symbol": "SGOV",
+   "exch": "NY",
+   "name": "iShares 0-3M Treasury"
+  },
+  {
+   "symbol": "SPMO",
+   "exch": "AX",
+   "name": "Invesco S&P 500 Momentum"
+  }
+ ],
+ "kr": [
+  {
+   "code": "005930",
+   "name": "삼성전자"
+  },
+  {
+   "code": "102110",
+   "name": "TIGER 200"
+  },
+  {
+   "code": "442580",
+   "name": "PLUS 글로벌HBM반도체"
+  },
+  {
+   "code": "487240",
+   "name": "KODEX AI전력핵심설비"
+  },
+  {
+   "code": "496080",
+   "name": "TIGER 코리아밸류업"
+  },
+  {
+   "code": "147970",
+   "name": "TIGER 모멘텀"
+  },
+  {
+   "code": "0195S0",
+   "name": "TIGER SK하이닉스단일 레버리지"
+  },
+  {
+   "code": "0183J0",
+   "name": "TIGER 미국우주테크"
+  },
+  {
+   "code": "360750",
+   "name": "TIGER 미국S&P500"
+  },
+  {
+   "code": "379810",
+   "name": "KODEX 미국나스닥100"
+  },
+  {
+   "code": "133690",
+   "name": "TIGER 미국나스닥100"
+  },
+  {
+   "code": "0144L0",
+   "name": "KODEX 미국성장커버드콜액티브"
+  },
+  {
+   "code": "0072R0",
+   "name": "TIGER KRX금현물(Yahoo: TIGER Gold Spot)"
+  },
+  {
+   "code": "0137V0",
+   "name": "KIWOOM S&P500 모멘텀"
+  },
+  {
+   "code": "442560",
+   "name": "RISE TDF2040액티브 적격"
+  }
+ ]
+}

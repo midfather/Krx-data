@@ -1,0 +1,47 @@
+name: meritz-prices
+on:
+  schedule:
+    - cron: "*/30 0-6,13-20 * * 1-5"   # 국내 장중 + 미국 장중
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/triggers/meritz.txt"
+permissions:
+  contents: write
+concurrency:
+  group: meritz
+  cancel-in-progress: false
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    env:
+      OPENAPI_SHA: ${{ vars.MERITZ_OPENAPI_SHA || 'f3b1353e55c019daf7157f495f55b29c2b5fc0d1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 공식 저장소를 고정 SHA로 가져오기
+        run: |
+          mkdir _openapi_src && cd _openapi_src
+          git init -q
+          git remote add origin https://github.com/meritz-securities/open-api.git
+          git fetch --depth 1 origin "$OPENAPI_SHA"
+          git checkout -q FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "$OPENAPI_SHA"
+      - run: python3 -m pip install requests websocket-client
+      - name: 가격 조회
+        env:
+          PYTHONPATH: ${{ github.workspace }}/_openapi_src
+          MERITZ_READ_ONLY: "1"
+          MERITZ_APP_KEY: ${{ secrets.MERITZ_APP_KEY }}
+          MERITZ_APP_SECRET: ${{ secrets.MERITZ_APP_SECRET }}
+          MERITZ_ACCOUNT_NO: ${{ secrets.MERITZ_ACCOUNT_NO }}
+        run: python3 meritz/export_prices.py
+      - name: 저장
+        run: |
+          git config user.name "meritz-bot"
+          git config user.email "meritz-bot@users.noreply.github.com"
+          git add data/meritz/latest.json
+          git commit -m "Meritz prices $(TZ=Asia/Seoul date +%F_%H%M)" || echo "no change"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done
