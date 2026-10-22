@@ -78,6 +78,21 @@ if tok:
             w.writerows(snap)
         json.dump(snap, open("data/kis/latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+# 해외 보유 종목 현재가(2026-10-22) — 메리츠 장애 시 2순위 대안. 가격만 저장(수량·계좌 없음)
+US_SYMS = {"NVDA": "NAS", "GOOGL": "NAS", "MSFT": "NAS", "JNJ": "NYS", "KO": "NYS", "QQQM": "NAS", "SPYM": "AMS", "IEF": "NAS",
+           "RDW": "NYS", "IREN": "NAS", "ARKF": "AMS", "XRPI": "NAS", "AMZN": "NAS", "UNH": "NYS", "O": "NYS", "QLD": "AMS",
+           "QQQI": "NAS", "SGOV": "NYS", "SPMO": "AMS"}
+if tok:
+    usnap = []
+    for s_, ex_ in US_SYMS.items():
+        r_ = req("GET", "/uapi/overseas-price/v1/quotations/price", "HHDFS00000300", {"AUTH": "", "EXCD": ex_, "SYMB": s_}, tok=tok)
+        o_ = (r_ or {}).get("output") or {}
+        if o_.get("last") not in (None, "", "0", "0.0000"):
+            usnap.append({"symbol": s_, "price": o_.get("last"), "chg_pct": o_.get("rate"), "base": o_.get("base"), "time_kst": kst.strftime("%Y-%m-%d %H:%M")})
+    if usnap:
+        os.makedirs("data/kis", exist_ok=True)
+        json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "prices": usnap}, open("data/kis/us_latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
 # 일봉 채우기 모드: .github/triggers/kis.txt 내용에 'daily'가 있으면 종목별 일봉 약 400일을 data/kis/daily/코드.csv로 저장(덮어씀)
 MODE = open(".github/triggers/kis.txt", encoding="utf-8").read() if os.path.exists(".github/triggers/kis.txt") else ""
 if tok and "daily" in MODE:
