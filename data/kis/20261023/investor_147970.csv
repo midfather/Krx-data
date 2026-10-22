@@ -1,4 +1,5 @@
 stck_bsop_date,stck_clpr,prsn_ntby_qty,frgn_ntby_qty,orgn_ntby_qty,prsn_ntby_tr_pbmn,frgn_ntby_tr_pbmn,orgn_ntby_tr_pbmn
+20261023,64925,,,,,,
 20261022,64925,7,-6,-1,0,0,0
 20261021,65970,-253,9,206,-17,1,13
 20261020,65030,64,-194,126,4,-13,8
@@ -18,4 +19,3 @@ stck_bsop_date,stck_clpr,prsn_ntby_qty,frgn_ntby_qty,orgn_ntby_qty,prsn_ntby_tr_
 20260928,79805,196,-397,201,16,-32,16
 20260923,79660,75,-55,-20,6,-4,-2
 20260922,80070,-638,-132,980,-51,-11,79
-20260921,79125,-11654,287,11197,-925,23,889
