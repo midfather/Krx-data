@@ -1,5 +1,5 @@
 {
- "run_kst": "2026-10-21 15:45",
+ "run_kst": "2026-10-22 09:42",
  "calls": [
   {
    "path": "/oauth2/tokenP",
@@ -1146,8 +1146,50 @@
    "path": "/uapi/overseas-price/v1/quotations/dailyprice",
    "tr": "HHDFS76240000",
    "code": null,
-   "ok": false,
-   "msg": "Remote end closed connection without response"
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/dailyprice",
+   "tr": "HHDFS76240000",
+   "code": null,
+   "ok": true,
+   "msg": "정상처리 되었습니다."
   },
   {
    "path": "/uapi/overseas-price/v1/quotations/price-detail",
@@ -2683,6 +2725,6 @@
    "msg": "정상처리 되었습니다."
   }
  ],
- "ok": 382,
- "fail": 1
+ "ok": 389,
+ "fail": 0
 }
