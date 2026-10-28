@@ -1,8 +1,8 @@
 {
- "run_kst": "2026-10-27 09:02",
+ "run_kst": "2026-10-28 09:05",
  "results": [
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "etf_hold",
    "path": "etp/etf_bydd_trd",
    "http": 200,
@@ -11,7 +11,7 @@
    "kept": 0
   },
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "kospi_stock",
    "path": "sto/stk_bydd_trd",
    "http": 200,
@@ -20,7 +20,7 @@
    "kept": 0
   },
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "kospi_index",
    "path": "idx/kospi_dd_trd",
    "http": 200,
@@ -29,7 +29,7 @@
    "kept": 0
   },
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "gold",
    "path": "gen/gold_bydd_trd",
    "http": 200,
@@ -38,7 +38,7 @@
    "kept": 0
   },
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "bond_kts",
    "path": "bon/kts_bydd_trd",
    "http": 200,
@@ -47,7 +47,7 @@
    "kept": 0
   },
   {
-   "date": "20261027",
+   "date": "20261028",
    "ep": "bond_index",
    "path": "idx/bon_dd_trd",
    "http": 200,
@@ -56,11 +56,11 @@
    "kept": 0
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "etf_hold",
    "path": "etp/etf_bydd_trd",
    "http": 200,
-   "total_rows": 1183,
+   "total_rows": 1186,
    "fields": [
     "BAS_DD",
     "ISU_CD",
@@ -85,7 +85,7 @@
    "kept": 35
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "kospi_stock",
    "path": "sto/stk_bydd_trd",
    "http": 200,
@@ -110,7 +110,7 @@
    "kept": 2
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "kospi_index",
    "path": "idx/kospi_dd_trd",
    "http": 200,
@@ -132,7 +132,7 @@
    "kept": 2
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "gold",
    "path": "gen/gold_bydd_trd",
    "http": 200,
@@ -153,11 +153,11 @@
    "kept": 2
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "bond_kts",
    "path": "bon/kts_bydd_trd",
    "http": 200,
-   "total_rows": 10,
+   "total_rows": 9,
    "fields": [
     "BAS_DD",
     "MKT_NM",
@@ -177,10 +177,10 @@
     "ACC_TRDVOL",
     "ACC_TRDVAL"
    ],
-   "kept": 10
+   "kept": 9
   },
   {
-   "date": "20261026",
+   "date": "20261027",
    "ep": "bond_index",
    "path": "idx/bon_dd_trd",
    "http": 200,
@@ -203,35 +203,6 @@
     "BND_IDX_AVG_YD"
    ],
    "kept": 3
-  },
-  {
-   "date": "20261025",
-   "ep": "etf_hold",
-   "path": "etp/etf_bydd_trd",
-   "http": 200,
-   "total_rows": 1183,
-   "fields": [
-    "BAS_DD",
-    "ISU_CD",
-    "ISU_NM",
-    "TDD_CLSPRC",
-    "CMPPREVDD_PRC",
-    "FLUC_RT",
-    "NAV",
-    "TDD_OPNPRC",
-    "TDD_HGPRC",
-    "TDD_LWPRC",
-    "ACC_TRDVOL",
-    "ACC_TRDVAL",
-    "MKTCAP",
-    "INVSTASST_NETASST_TOTAMT",
-    "LIST_SHRS",
-    "IDX_IND_NM",
-    "OBJ_STKPRC_IDX",
-    "CMPPREVDD_IDX",
-    "FLUC_RT_IDX"
-   ],
-   "kept": 35
   },
   {
    "date": "20261025",
@@ -270,60 +241,6 @@
    "kept": 0
   },
   {
-   "date": "20261025",
-   "ep": "bond_index",
-   "path": "idx/bon_dd_trd",
-   "http": 200,
-   "total_rows": 3,
-   "fields": [
-    "BAS_DD",
-    "BND_IDX_GRP_NM",
-    "TOT_EARNG_IDX",
-    "TOT_EARNG_IDX_CMPPREVDD",
-    "NETPRC_IDX",
-    "NETPRC_IDX_CMPPREVDD",
-    "ZERO_REINVST_IDX",
-    "ZERO_REINVST_IDX_CMPPREVDD",
-    "CALL_REINVST_IDX",
-    "CALL_REINVST_IDX_CMPPREVDD",
-    "MKT_PRC_IDX",
-    "MKT_PRC_IDX_CMPPREVDD",
-    "AVG_DURATION",
-    "AVG_CONVEXITY_PRC",
-    "BND_IDX_AVG_YD"
-   ],
-   "kept": 3
-  },
-  {
-   "date": "20261024",
-   "ep": "etf_hold",
-   "path": "etp/etf_bydd_trd",
-   "http": 200,
-   "total_rows": 1183,
-   "fields": [
-    "BAS_DD",
-    "ISU_CD",
-    "ISU_NM",
-    "TDD_CLSPRC",
-    "CMPPREVDD_PRC",
-    "FLUC_RT",
-    "NAV",
-    "TDD_OPNPRC",
-    "TDD_HGPRC",
-    "TDD_LWPRC",
-    "ACC_TRDVOL",
-    "ACC_TRDVAL",
-    "MKTCAP",
-    "INVSTASST_NETASST_TOTAMT",
-    "LIST_SHRS",
-    "IDX_IND_NM",
-    "OBJ_STKPRC_IDX",
-    "CMPPREVDD_IDX",
-    "FLUC_RT_IDX"
-   ],
-   "kept": 35
-  },
-  {
    "date": "20261024",
    "ep": "kospi_stock",
    "path": "sto/stk_bydd_trd",
@@ -358,31 +275,6 @@
    "msg": {},
    "total_rows": 0,
    "kept": 0
-  },
-  {
-   "date": "20261024",
-   "ep": "bond_index",
-   "path": "idx/bon_dd_trd",
-   "http": 200,
-   "total_rows": 3,
-   "fields": [
-    "BAS_DD",
-    "BND_IDX_GRP_NM",
-    "TOT_EARNG_IDX",
-    "TOT_EARNG_IDX_CMPPREVDD",
-    "NETPRC_IDX",
-    "NETPRC_IDX_CMPPREVDD",
-    "ZERO_REINVST_IDX",
-    "ZERO_REINVST_IDX_CMPPREVDD",
-    "CALL_REINVST_IDX",
-    "CALL_REINVST_IDX_CMPPREVDD",
-    "MKT_PRC_IDX",
-    "MKT_PRC_IDX_CMPPREVDD",
-    "AVG_DURATION",
-    "AVG_CONVEXITY_PRC",
-    "BND_IDX_AVG_YD"
-   ],
-   "kept": 3
   }
  ]
 }
