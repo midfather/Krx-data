@@ -277,3 +277,44 @@ try:
     print("append_daily", append_daily.run())
 except Exception as e:
     print("append_daily 실패:", type(e).__name__, str(e)[:120])
+def _kx_num(x):
+    try: return float(str(x).replace(",", ""))
+    except Exception: return None
+if tok:
+    try:
+        fut, probe = {}, {}
+        for key, cands in {"ES": ["ESZ26", "ESH27"], "NQ": ["NQZ26", "NQH27"]}.items():
+            for cd in cands:
+                d_ = req("GET", "/uapi/overseas-futureoption/v1/quotations/inquire-price", "HHDFC55010000", {"SRS_CD": cd}, tok=tok)
+                o_ = (d_ or {}).get("output1") or (d_ or {}).get("output") or {}
+                p_ = _kx_num(o_.get("last_price") or o_.get("prev_price"))
+                probe[key] = {"code": cd, "ok": bool(d_ and p_), "keys": sorted(o_.keys())[:12] if o_ else []}
+                if d_ and p_:
+                    fut[key] = {"price": p_, "chg_pct": _kx_num(o_.get("flng_rt") or o_.get("prev_diff_rate")), "code": cd}; break
+        for cd in ["101T12", "101T03"]:
+            d_ = req("GET", "/uapi/domestic-futureoption/v1/quotations/inquire-price", "FHMIF10000000", {"FID_COND_MRKT_DIV_CODE": "F", "FID_INPUT_ISCD": cd}, tok=tok)
+            o_ = (d_ or {}).get("output1") or {}
+            p_ = _kx_num(o_.get("futs_prpr"))
+            probe["K200F"] = {"code": cd, "ok": bool(d_ and p_)}
+            if d_ and p_:
+                fut["K200F"] = {"price": p_, "chg_pct": _kx_num(o_.get("futs_prdy_ctrt")), "code": cd}; break
+        for key, mk, cands in [("USDKRW", "X", ["FX@KRW", "USDKRW"]), ("VIX", "N", ["VIX", ".VIX", "VIXI"])]:
+            for cd in cands:
+                end = kst; st = end - datetime.timedelta(days=10)
+                d_ = req("GET", "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice", "FHKST03030100",
+                         {"FID_COND_MRKT_DIV_CODE": mk, "FID_INPUT_ISCD": cd, "FID_INPUT_DATE_1": st.strftime("%Y%m%d"), "FID_INPUT_DATE_2": end.strftime("%Y%m%d"), "FID_PERIOD_DIV_CODE": "D"}, tok=tok)
+                o_ = (d_ or {}).get("output1") or {}
+                p_ = _kx_num(o_.get("ovrs_nmix_prpr"))
+                probe[key] = {"code": cd, "ok": bool(d_ and p_)}
+                if d_ and p_:
+                    fut[key] = {"price": p_, "chg_pct": _kx_num(o_.get("prdy_ctrt")), "code": cd}; break
+        json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "probe": probe}, open("data/kis/extra_probe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if fut:
+            old_ = {}
+            if os.path.exists("data/kis/us_futures_latest.json"):
+                try: old_ = json.load(open("data/kis/us_futures_latest.json", encoding="utf-8")).get("futures", {})
+                except Exception: old_ = {}
+            old_.update(fut)
+            json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "futures": old_}, open("data/kis/us_futures_latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception as e_:
+        json.dump({"error": type(e_).__name__ + ": " + str(e_)[:150]}, open("data/kis/extra_probe.json", "w"))
