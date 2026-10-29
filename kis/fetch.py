@@ -93,6 +93,59 @@ if tok:
         os.makedirs("data/kis", exist_ok=True)
         json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "prices": usnap}, open("data/kis/us_latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+# 미국 주요 지수 일봉(2026-10-28) — 한투 '해외주식 종목/지수/환율기간별시세'(FHKST03030100, 시장구분 N). QQQ 대용 아님, 지수 자체.
+# 지수 코드는 공식 문서에 명시가 없어 후보를 차례로 시험하고, 되는 코드와 실패 사유(비밀값 없음)를 data/kis/us_index_probe.json에 남긴다.
+US_INDEX = {"NDX": ["NDX", ".NDX", "NDX100"], "SPX": ["SPX", ".SPX", "GSPC"], "IXIC": ["COMP", ".IXIC", "IXIC"], "SOX": ["SOX", ".SOX"]}
+if tok:
+    try:
+        os.makedirs("data/kis/us_index", exist_ok=True); probe = {}; ilatest = {}
+        for nm, cands in US_INDEX.items():
+            fn = f"data/kis/us_index/{nm}.csv"; rows = {}
+            if os.path.exists(fn):
+                for r_ in csv.DictReader(open(fn, encoding="utf-8")): rows[r_["date"]] = r_
+            pages = 6 if len(rows) < 260 else 1   # 200일선 계산용으로 처음엔 약 500일 채움
+            for cd in cands:
+                end = kst; got = {}; msg = ""
+                for _ in range(pages):
+                    st = end - datetime.timedelta(days=140)
+                    d_ = req("GET", "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice", "FHKST03030100",
+                             {"FID_COND_MRKT_DIV_CODE": "N", "FID_INPUT_ISCD": cd, "FID_INPUT_DATE_1": st.strftime("%Y%m%d"), "FID_INPUT_DATE_2": end.strftime("%Y%m%d"), "FID_PERIOD_DIV_CODE": "D"}, tok=tok)
+                    if not d_: break
+                    for b in d_.get("output2", []) or []:
+                        if b.get("stck_bsop_date") and b.get("ovrs_nmix_prpr") not in (None, "", "0", "0.0000"):
+                            got[b["stck_bsop_date"]] = {"date": b["stck_bsop_date"], "open": b.get("ovrs_nmix_oprc"), "high": b.get("ovrs_nmix_hgpr"), "low": b.get("ovrs_nmix_lwpr"), "close": b["ovrs_nmix_prpr"], "vol": b.get("acml_vol")}
+                    o1 = d_.get("output1") or {}
+                    if o1 and "info" not in ilatest.get(nm, {}): ilatest[nm] = {"code": cd, "price": o1.get("ovrs_nmix_prpr"), "chg": o1.get("ovrs_nmix_prdy_vrss"), "chg_pct": o1.get("prdy_ctrt"), "prev_close": o1.get("ovrs_nmix_prdy_clpr"), "time_kst": kst.strftime("%Y-%m-%d %H:%M")}
+                    end = st - datetime.timedelta(days=1)
+                probe[nm] = {"code": cd, "rows": len(got), "ok": bool(got)}
+                if got:
+                    rows.update(got); break
+            if rows:
+                with open(fn, "w", newline="", encoding="utf-8") as f:
+                    w = csv.DictWriter(f, fieldnames=["date", "open", "high", "low", "close", "vol"], extrasaction="ignore"); w.writeheader()
+                    for k in sorted(rows): w.writerow(rows[k])
+        json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "probe": probe}, open("data/kis/us_index_probe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if ilatest: json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "indices": ilatest}, open("data/kis/us_index_latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception as e_:
+        json.dump({"error": type(e_).__name__ + ": " + str(e_)[:150]}, open("data/kis/us_index_probe.json", "w", encoding="utf-8"))
+
+# 미국 지수선물(E-mini S&P500 ES, E-mini 나스닥100 NQ) 현재가 — 한투 '해외선물옵션 종목현재가'(HHDFC55010000). 만기월 후보를 차례로 시험하고 결과를 data/kis/us_futures_probe.json에 남긴다(비밀값 없음).
+if tok:
+    try:
+        fprobe = {}; flatest = {}
+        for nm, roots in {"ES": ["ESZ26", "ESH27"], "NQ": ["NQZ26", "NQH27"]}.items():
+            for cd in roots:
+                d_ = req("GET", "/uapi/overseas-futureoption/v1/quotations/inquire-price", "HHDFC55010000", {"SRS_CD": cd}, tok=tok)
+                o_ = (d_ or {}).get("output1") or (d_ or {}).get("output") or {}
+                fprobe[cd] = {"ok": bool(o_), "keys": sorted(o_.keys())[:40] if isinstance(o_, dict) else []}
+                if o_ and nm not in flatest:
+                    flatest[nm] = {"code": cd, "raw": o_, "time_kst": kst.strftime("%Y-%m-%d %H:%M")}
+                    break
+        json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "probe": fprobe}, open("data/kis/us_futures_probe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if flatest: json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "futures": flatest}, open("data/kis/us_futures_latest.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception as e_:
+        json.dump({"error": type(e_).__name__ + ": " + str(e_)[:150]}, open("data/kis/us_futures_probe.json", "w", encoding="utf-8"))
+
 # 일봉 채우기 모드: .github/triggers/kis.txt 내용에 'daily'가 있으면 종목별 일봉 약 400일을 data/kis/daily/코드.csv로 저장(덮어씀)
 MODE = open(".github/triggers/kis.txt", encoding="utf-8").read() if os.path.exists(".github/triggers/kis.txt") else ""
 if tok and "daily" in MODE:
