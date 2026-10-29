@@ -46,6 +46,15 @@ jobs:
           etype=$(grep -oE '^[A-Za-z_.]*(Error|Exception)' _err.txt | tail -1)
           printf '{"run_kst":"%s","exit":%s,"error_type":"%s","has_key":%s,"has_secret":%s,"has_account":%s}\n' "$(TZ=Asia/Seoul date -Iseconds)" "$rc" "$etype" "$(st "$MERITZ_APP_KEY")" "$(st "$MERITZ_APP_SECRET")" "$(st "$MERITZ_ACCOUNT_NO")" > data/meritz/_status.json
           exit $rc
+      - name: 카탈로그 항목 저장
+        continue-on-error: true
+        env:
+          PYTHONPATH: ${{ github.workspace }}/_openapi_src
+          MERITZ_READ_ONLY: "1"
+          MERITZ_APP_KEY: ${{ secrets.MERITZ_APP_KEY }}
+          MERITZ_APP_SECRET: ${{ secrets.MERITZ_APP_SECRET }}
+          MERITZ_ACCOUNT_NO: ${{ secrets.MERITZ_ACCOUNT_NO }}
+        run: python3 meritz/catalog_probe.py
       - name: 저장
         if: always()
         run: |
