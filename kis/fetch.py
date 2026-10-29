@@ -146,6 +146,21 @@ if tok:
     except Exception as e_:
         json.dump({"error": type(e_).__name__ + ": " + str(e_)[:150]}, open("data/kis/us_futures_probe.json", "w", encoding="utf-8"))
 
+# 선물 대체 경로 시험(2026-10-29): 해외지수 기간별시세 TR에 시장구분·선물 코드 후보를 넣어 본다. 결과(코드·행수·메시지, 비밀값 없음)만 data/kis/us_fut_probe2.json에 저장.
+if tok and "us-fut2" in (open(".github/triggers/kis.txt", encoding="utf-8").read() if os.path.exists(".github/triggers/kis.txt") else ""):
+    try:
+        pr2 = {}
+        for dv in ["N", "F", "S"]:
+            for cd in ["ES", "NQ", "ESZ26", "NQZ26", "ES1!", "NQ1!", "ES=F", "NQ=F", "SPXFUT", "NDXFUT"]:
+                st = kst - datetime.timedelta(days=10)
+                d_ = req("GET", "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice", "FHKST03030100",
+                         {"FID_COND_MRKT_DIV_CODE": dv, "FID_INPUT_ISCD": cd, "FID_INPUT_DATE_1": st.strftime("%Y%m%d"), "FID_INPUT_DATE_2": kst.strftime("%Y%m%d"), "FID_PERIOD_DIV_CODE": "D"}, tok=tok)
+                n = len((d_ or {}).get("output2", []) or [])
+                pr2[f"{dv}:{cd}"] = {"rows": n, "price": ((d_ or {}).get("output1") or {}).get("ovrs_nmix_prpr")}
+        json.dump({"time_kst": kst.strftime("%Y-%m-%d %H:%M"), "probe": pr2}, open("data/kis/us_fut_probe2.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception as e_:
+        json.dump({"error": type(e_).__name__ + ": " + str(e_)[:150]}, open("data/kis/us_fut_probe2.json", "w", encoding="utf-8"))
+
 # 일봉 채우기 모드: .github/triggers/kis.txt 내용에 'daily'가 있으면 종목별 일봉 약 400일을 data/kis/daily/코드.csv로 저장(덮어씀)
 MODE = open(".github/triggers/kis.txt", encoding="utf-8").read() if os.path.exists(".github/triggers/kis.txt") else ""
 if tok and "daily" in MODE:
