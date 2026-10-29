@@ -1,24 +1,24 @@
 {
- "time_kst": "2026-10-30 03:49",
+ "time_kst": "2026-10-30 04:49",
  "probe": {
   "NDX": {
    "code": "NDX",
-   "rows": 94,
+   "rows": 95,
    "ok": true
   },
   "SPX": {
    "code": "SPX",
-   "rows": 94,
+   "rows": 95,
    "ok": true
   },
   "IXIC": {
    "code": "COMP",
-   "rows": 94,
+   "rows": 95,
    "ok": true
   },
   "SOX": {
    "code": "SOX",
-   "rows": 94,
+   "rows": 95,
    "ok": true
   }
  }
