@@ -1,0 +1,25 @@
+{
+ "time_kst": "2026-10-29 13:29",
+ "probe": {
+  "NDX": {
+   "code": "NDX",
+   "rows": 561,
+   "ok": true
+  },
+  "SPX": {
+   "code": "SPX",
+   "rows": 561,
+   "ok": true
+  },
+  "IXIC": {
+   "code": "COMP",
+   "rows": 561,
+   "ok": true
+  },
+  "SOX": {
+   "code": "SOX",
+   "rows": 561,
+   "ok": true
+  }
+ }
+}

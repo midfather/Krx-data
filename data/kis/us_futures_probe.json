@@ -1,0 +1,21 @@
+{
+ "time_kst": "2026-10-29 13:29",
+ "probe": {
+  "ESZ26": {
+   "ok": false,
+   "keys": []
+  },
+  "ESH27": {
+   "ok": false,
+   "keys": []
+  },
+  "NQZ26": {
+   "ok": false,
+   "keys": []
+  },
+  "NQH27": {
+   "ok": false,
+   "keys": []
+  }
+ }
+}

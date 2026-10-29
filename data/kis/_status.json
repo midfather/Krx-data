@@ -1,5 +1,5 @@
 {
- "run_kst": "2026-10-29 12:45",
+ "run_kst": "2026-10-29 13:29",
  "calls": [
   {
    "path": "/oauth2/tokenP",
@@ -343,8 +343,204 @@
    "code": null,
    "ok": true,
    "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "NDX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SPX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "COMP",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice",
+   "tr": "FHKST03030100",
+   "code": "SOX",
+   "ok": true,
+   "msg": "정상처리 되었습니다."
+  },
+  {
+   "path": "/uapi/overseas-futureoption/v1/quotations/inquire-price",
+   "tr": "HHDFC55010000",
+   "code": null,
+   "ok": false,
+   "msg": "{rt_cd:\"1\",\"msg1\":\"CME SUB거래소 신청 계좌가 아닙니다.\",\"msg_cd\":\"EGW00550\"}"
+  },
+  {
+   "path": "/uapi/overseas-futureoption/v1/quotations/inquire-price",
+   "tr": "HHDFC55010000",
+   "code": null,
+   "ok": false,
+   "msg": "{rt_cd:\"1\",\"msg1\":\"CME SUB거래소 신청 계좌가 아닙니다.\",\"msg_cd\":\"EGW00550\"}"
+  },
+  {
+   "path": "/uapi/overseas-futureoption/v1/quotations/inquire-price",
+   "tr": "HHDFC55010000",
+   "code": null,
+   "ok": false,
+   "msg": "{rt_cd:\"1\",\"msg1\":\"CME SUB거래소 신청 계좌가 아닙니다.\",\"msg_cd\":\"EGW00550\"}"
+  },
+  {
+   "path": "/uapi/overseas-futureoption/v1/quotations/inquire-price",
+   "tr": "HHDFC55010000",
+   "code": null,
+   "ok": false,
+   "msg": "{rt_cd:\"1\",\"msg1\":\"CME SUB거래소 신청 계좌가 아닙니다.\",\"msg_cd\":\"EGW00550\"}"
   }
  ],
- "ok": 49,
- "fail": 0
+ "ok": 73,
+ "fail": 4
 }
