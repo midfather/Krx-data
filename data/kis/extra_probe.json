@@ -1,0 +1,27 @@
+{
+ "time_kst": "2026-10-29 14:43",
+ "probe": {
+  "ES": {
+   "code": "ESH27",
+   "ok": false,
+   "keys": []
+  },
+  "NQ": {
+   "code": "NQH27",
+   "ok": false,
+   "keys": []
+  },
+  "K200F": {
+   "code": "101T03",
+   "ok": false
+  },
+  "USDKRW": {
+   "code": "FX@KRW",
+   "ok": true
+  },
+  "VIX": {
+   "code": "VIX",
+   "ok": true
+  }
+ }
+}
