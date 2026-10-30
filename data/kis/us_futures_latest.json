@@ -1,5 +1,5 @@
 {
- "time_kst": "2026-10-31 04:46",
+ "time_kst": "2026-10-31 05:39",
  "futures": {
   "USDKRW": {
    "price": 1334.3,
@@ -7,8 +7,8 @@
    "code": "FX@KRW"
   },
   "VIX": {
-   "price": 20.31,
-   "chg_pct": 18.08,
+   "price": 19.42,
+   "chg_pct": 12.91,
    "code": "VIX"
   }
  }
