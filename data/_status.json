@@ -1,8 +1,8 @@
 {
- "run_kst": "2026-10-29 09:08",
+ "run_kst": "2026-10-30 09:09",
  "results": [
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "etf_hold",
    "path": "etp/etf_bydd_trd",
    "http": 200,
@@ -11,7 +11,7 @@
    "kept": 0
   },
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "kospi_stock",
    "path": "sto/stk_bydd_trd",
    "http": 200,
@@ -20,7 +20,7 @@
    "kept": 0
   },
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "kospi_index",
    "path": "idx/kospi_dd_trd",
    "http": 200,
@@ -29,7 +29,7 @@
    "kept": 0
   },
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "gold",
    "path": "gen/gold_bydd_trd",
    "http": 200,
@@ -38,7 +38,7 @@
    "kept": 0
   },
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "bond_kts",
    "path": "bon/kts_bydd_trd",
    "http": 200,
@@ -47,7 +47,7 @@
    "kept": 0
   },
   {
-   "date": "20261029",
+   "date": "20261030",
    "ep": "bond_index",
    "path": "idx/bon_dd_trd",
    "http": 200,
@@ -56,11 +56,11 @@
    "kept": 0
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "etf_hold",
    "path": "etp/etf_bydd_trd",
    "http": 200,
-   "total_rows": 1186,
+   "total_rows": 1183,
    "fields": [
     "BAS_DD",
     "ISU_CD",
@@ -85,7 +85,7 @@
    "kept": 35
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "kospi_stock",
    "path": "sto/stk_bydd_trd",
    "http": 200,
@@ -110,7 +110,7 @@
    "kept": 2
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "kospi_index",
    "path": "idx/kospi_dd_trd",
    "http": 200,
@@ -132,7 +132,7 @@
    "kept": 2
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "gold",
    "path": "gen/gold_bydd_trd",
    "http": 200,
@@ -153,11 +153,11 @@
    "kept": 2
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "bond_kts",
    "path": "bon/kts_bydd_trd",
    "http": 200,
-   "total_rows": 9,
+   "total_rows": 10,
    "fields": [
     "BAS_DD",
     "MKT_NM",
@@ -177,10 +177,10 @@
     "ACC_TRDVOL",
     "ACC_TRDVAL"
    ],
-   "kept": 9
+   "kept": 10
   },
   {
-   "date": "20261028",
+   "date": "20261029",
    "ep": "bond_index",
    "path": "idx/bon_dd_trd",
    "http": 200,
